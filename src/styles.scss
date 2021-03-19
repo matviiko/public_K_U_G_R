@@ -1,2 +1,24 @@
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.main-layout {
+  min-height: calc(100% - 200px);
+  padding-bottom: 150px;
+}
+
+.main-layout:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.footer {
+  height: 200px;
+  margin-top: -150px;
+}
